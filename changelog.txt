@@ -1,0 +1,28 @@
+#Angelok963 | BETA
+- Поддержа customModelData для результата крафтов и для ингредиентов
+- Поддержа Attributes для результата крафтов и для ингредиентов
+- Привязываемый UUID крафта генерируется на основе названия рецепта, а не из "воздуха". Это не позволяет крафтам слетать при рестарте
+- Поддержка привязки group для рецепта
+- Поддержка lore и name для инградиентов
+
+Пример крафта с изменённой версией плагина:
+recipes:
+  crafting:
+    myrecipe-1:
+      enabled: true
+      craft:
+        result:
+          id: GRASS_BLOCK
+          id-amount: 16
+          id-book: 0
+		  attribute_modifiers:
+            HAND:
+              GENERIC_ATTACK_DAMAGE: 10
+		  group: MyRecipes
+        slots:
+          1:
+            id: DIRT
+			custom-model-data: 2
+          3:
+            id: DIRT
+			custom-model-data: 2

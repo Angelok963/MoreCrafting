@@ -1,0 +1,17 @@
+name: MoreCrafting
+version: 3.6
+author: MrFantiVideo
+main: fr.mrfantivideo.morecrafting.Main
+api-version: 1.16
+
+commands:
+    morecrafting:
+        description: Plugin version.
+    morecrafting help:
+        description: All available commands.
+    morecrafting book:
+        description: Give the recipe book.
+    morecrafting recipes:
+        description: Displays available recipes.
+    morecrafting reload:
+        description: Reload configuration files.
